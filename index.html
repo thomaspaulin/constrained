@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What the F*** Should I Make?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="dateline">An idea generator · No. 01</div>
+      <h1 class="title">
+        <span class="title-line">What the f***</span>
+        <span class="title-line">should I</span>
+        <span class="title-line title-line--accent">make?</span>
+      </h1>
+      <p class="lede">Tell it what you like, what you've got, and what you're in the mood to make. It'll give you something to do.</p>
+    </header>
+
+    <section class="setup" id="setup">
+      <div class="field">
+        <label class="field-label" for="hobbies-input">
+          <span class="field-num">01</span>
+          <span class="field-name">Your hobbies / interests</span>
+        </label>
+        <div class="combo" id="hobbies-combo">
+          <div class="combo-field" id="hobbies-field">
+            <span class="combo-pills" id="hobbies-pills"></span>
+            <input
+              type="text"
+              class="combo-input"
+              id="hobbies-input"
+              placeholder="search or type your own…"
+              autocomplete="off"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+            />
+          </div>
+          <div class="combo-popover" id="hobbies-popover" hidden>
+            <div class="combo-list" id="hobbies-list" role="listbox" aria-multiselectable="true"></div>
+          </div>
+        </div>
+        <p class="field-help">Pick from the list or type your own and press enter.</p>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="craft-select">
+          <span class="field-num">02</span>
+          <span class="field-name">What craft</span>
+        </label>
+        <select id="craft-select">
+          <option value="*">Surprise me</option>
+        </select>
+      </div>
+
+      <div class="field" id="tools-field-wrapper">
+        <span class="field-label">
+          <span class="field-num">03</span>
+          <span class="field-name">Tools you have <em class="field-optional">— optional</em></span>
+        </span>
+        <div class="combo" id="tools-combo">
+          <div class="combo-field" id="tools-field">
+            <span class="combo-pills" id="tools-pills"></span>
+            <input
+              type="text"
+              class="combo-input"
+              id="tools-input"
+              placeholder="search or type your own…"
+              autocomplete="off"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+            />
+          </div>
+          <div class="combo-popover" id="tools-popover" hidden>
+            <div class="combo-actions">
+              <button type="button" class="combo-action" data-action="all">select all</button>
+              <button type="button" class="combo-action" data-action="clear">clear</button>
+            </div>
+            <div class="combo-list" id="tools-list" role="listbox" aria-multiselectable="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="generate" id="generate">Give me an idea →</button>
+    </section>
+
+    <section class="output" id="output" hidden>
+      <div class="output-meta">
+        <span class="output-label">The idea</span>
+        <button class="reroll" id="reroll">↻ reroll</button>
+      </div>
+      <p class="idea" id="idea"></p>
+      <div class="chips" id="chips"></div>
+      <p class="hint">Click any chip to exclude it from future rolls.</p>
+    </section>
+
+    <section class="excluded" id="excluded-section" hidden>
+      <div class="excluded-header">
+        <span class="output-label">Excluded</span>
+        <button class="clear-excluded" id="clear-excluded">clear all</button>
+      </div>
+      <div class="chips chips--excluded" id="excluded-chips"></div>
+    </section>
+
+    <footer class="footer">
+      <span>Built with rage against the blank page.</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

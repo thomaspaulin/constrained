@@ -1,0 +1,86 @@
+[
+  {
+    "category": "Art & craft",
+    "items": [
+      "painting", "drawing", "sculpture", "pottery", "ceramics", "printmaking", "screen printing", "cyanotyping", "letterpress", "bookbinding", "papermaking", "calligraphy", "lettering", "collage", "stained glass", "mosaic", "embroidery", "cross-stitch", "knitting", "crochet", "weaving", "macramé", "quilting", "felting", "woodworking", "wood carving", "leatherwork", "jewelry making", "metalsmithing", "blacksmithing", "glassblowing", "origami", "kirigami", "miniature painting", "tattoo art"
+    ]
+  },
+  {
+    "category": "Music",
+    "items": [
+      "jazz", "classical music", "baroque music", "opera", "electronic music", "ambient music", "techno", "house music", "hip hop", "punk", "metal", "folk music", "bluegrass", "world music", "playing guitar", "playing piano", "playing violin", "playing drums", "playing cello", "playing saxophone", "singing", "choral singing", "music production", "djing", "modular synthesis", "field recording", "instrument building"
+    ]
+  },
+  {
+    "category": "Performance & dance",
+    "items": [
+      "theater", "musical theater", "ballet", "contemporary dance", "tango", "salsa dancing", "swing dancing", "breakdancing", "ballroom dancing", "stand-up comedy", "improv", "circus arts", "juggling", "magic tricks", "puppetry", "drag"
+    ]
+  },
+  {
+    "category": "Writing & literature",
+    "items": [
+      "poetry", "fiction writing", "short stories", "screenwriting", "playwriting", "journaling", "blogging", "essay writing", "literary criticism", "science fiction", "fantasy literature", "horror fiction", "classic literature", "russian literature", "japanese literature", "modernist literature", "magical realism", "philosophy", "translation"
+    ]
+  },
+  {
+    "category": "Science & engineering",
+    "items": [
+      "astronomy", "astrophysics", "cosmology", "spaceflight", "rocketry", "nuclear engineering", "particle physics", "quantum mechanics", "chemistry", "organic chemistry", "biochemistry", "microbiology", "mycology", "botany", "entomology", "ornithology", "marine biology", "geology", "meteorology", "oceanography", "paleontology", "mathematics", "number theory", "topology", "statistics", "robotics", "biomechanics", "neuroscience", "genetics", "synthetic biology"
+    ]
+  },
+  {
+    "category": "Humanities & social",
+    "items": [
+      "history", "ancient history", "medieval history", "military history", "art history", "archaeology", "anthropology", "ethnography", "linguistics", "etymology", "ancient languages", "sociology", "psychology", "behavioral economics", "political theory", "urban planning", "architecture", "religious studies", "mythology"
+    ]
+  },
+  {
+    "category": "Digital & tech",
+    "items": [
+      "programming", "open source", "retro computing", "demoscene", "8-bit games", "video games", "speedrunning", "game development", "pixel art", "3d modeling", "3d printing", "generative art", "creative coding", "ai", "machine learning", "cryptography", "cybersecurity", "ham radio", "home automation", "electronics", "arduino projects", "raspberry pi projects", "mechanical keyboards", "vintage computing"
+    ]
+  },
+  {
+    "category": "Movement & outdoors",
+    "items": [
+      "running", "trail running", "ultrarunning", "marathon training", "cycling", "road cycling", "mountain biking", "bikepacking", "hiking", "thru-hiking", "rock climbing", "bouldering", "alpinism", "skiing", "snowboarding", "ice skating", "surfing", "skateboarding", "swimming", "open water swimming", "rowing", "kayaking", "sailing", "scuba diving", "freediving", "yoga", "pilates", "calisthenics", "weightlifting", "martial arts", "boxing", "fencing", "archery", "parkour"
+    ]
+  },
+  {
+    "category": "Nature & gardening",
+    "items": [
+      "gardening", "vegetable gardening", "permaculture", "bonsai", "houseplants", "succulents", "foraging", "mushroom hunting", "beekeeping", "birdwatching", "nature photography", "stargazing", "camping", "bushcraft", "wild swimming", "tide pooling"
+    ]
+  },
+  {
+    "category": "Food & drink",
+    "items": [
+      "cooking", "baking", "sourdough", "bread baking", "pastry", "pizza making", "barbecue", "smoking meat", "fermentation", "pickling", "cheesemaking", "charcuterie", "chocolate making", "coffee", "specialty coffee", "tea", "matcha", "wine", "natural wine", "beer brewing", "homebrewing", "cocktails", "mixology", "herbalism", "regional cuisine", "japanese cuisine", "thai cuisine", "italian cuisine"
+    ]
+  },
+  {
+    "category": "Games & play",
+    "items": [
+      "chess", "go", "shogi", "board games", "euro games", "tabletop rpgs", "dungeons and dragons", "card games", "magic the gathering", "warhammer", "miniature wargaming", "puzzles", "jigsaw puzzles", "crossword puzzles", "rubik's cube", "escape rooms", "lego", "model building", "model trains", "tabletop simulator"
+    ]
+  },
+  {
+    "category": "Pop culture & media",
+    "items": [
+      "anime", "manga", "comic books", "graphic novels", "indie comics", "film", "arthouse cinema", "horror films", "noir film", "documentary film", "animation", "stop motion", "podcasts", "audio drama", "youtube essays", "sci-fi tv", "true crime"
+    ]
+  },
+  {
+    "category": "Collecting & curiosities",
+    "items": [
+      "vinyl records", "antiques", "vintage cameras", "watches", "fountain pens", "stationery", "stamps", "coin collecting", "vintage maps", "rare books", "minerals", "fossils", "taxidermy", "perfume", "scent design"
+    ]
+  },
+  {
+    "category": "Travel & languages",
+    "items": [
+      "travel", "solo travel", "slow travel", "road trips", "train travel", "urban exploration", "geocaching", "learning languages", "polyglot study", "japanese", "french", "spanish", "mandarin", "latin", "greek"
+    ]
+  }
+]

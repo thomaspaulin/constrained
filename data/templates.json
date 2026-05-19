@@ -1,0 +1,62 @@
+{
+  "software": [
+    "Build a {format} {theme_clause} using {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Ship a {format} {theme_clause}. Stack: {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "painting": [
+    "Paint a {format} {theme_clause} in {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "sculpture": [
+    "Build a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "electronics": [
+    "Build a {format} {theme_clause} with {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "photography": [
+    "Shoot a {format} {theme_clause} with {material}. Style: {style}. Tools: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "sketch": [
+    "Draw a {format} {theme_clause} in {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} with {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "ceramics": [
+    "Throw or build a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} in {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "woodworking": [
+    "Build a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "textile": [
+    "Sew a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "writing": [
+    "Write a {format} {theme_clause} with {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Compose a {format} {theme_clause}. Tool: {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "music": [
+    "Compose a {format} {theme_clause} using {material}. Style: {style}. Rule: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} with {material}. Style: {style}. Rule: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "cooking": [
+    "Cook a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Make a {format} {theme_clause} with {material}. Style: {style}. Tools: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "jewelry": [
+    "Make a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Craft a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "paper": [
+    "Make a {format} {theme_clause} from {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Build a {format} {theme_clause} using {material}. Style: {style}. Tools: {tools_clause}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "dance": [
+    "Choreograph a {format} {theme_clause} using {material}. Style: {style}. Props: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Perform a {format} {theme_clause} with {material}. Style: {style}. Props: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}."
+  ]
+}

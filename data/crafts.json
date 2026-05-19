@@ -1,0 +1,17 @@
+[
+  { "id": "software", "label": "software", "usesTools": false },
+  { "id": "painting", "label": "painting", "usesTools": true },
+  { "id": "sculpture", "label": "sculpture", "usesTools": true },
+  { "id": "electronics", "label": "electronics", "usesTools": true },
+  { "id": "photography", "label": "photography", "usesTools": true },
+  { "id": "sketch", "label": "sketching / drawing", "usesTools": true },
+  { "id": "ceramics", "label": "ceramics", "usesTools": true },
+  { "id": "woodworking", "label": "woodworking", "usesTools": true },
+  { "id": "textile", "label": "sewing / textile", "usesTools": true },
+  { "id": "writing", "label": "writing", "usesTools": false },
+  { "id": "music", "label": "music", "usesTools": false },
+  { "id": "cooking", "label": "cooking / baking", "usesTools": true },
+  { "id": "jewelry", "label": "jewelry", "usesTools": true },
+  { "id": "paper", "label": "paper / origami", "usesTools": true },
+  { "id": "dance", "label": "dance / movement", "usesTools": true }
+]

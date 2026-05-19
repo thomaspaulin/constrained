@@ -1,0 +1,563 @@
+:root {
+  --bg: #f4f1ea;
+  --ink: #15140f;
+  --ink-soft: #4a4738;
+  --rule: #15140f;
+  --accent: #ff3d00;
+  --accent-soft: #ffe6dc;
+  --paper: #fffdf6;
+  --display: "Fraunces", Georgia, serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.06) 1px, transparent 0);
+  background-size: 4px 4px;
+  z-index: 1;
+}
+
+.page {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+/* Masthead */
+.masthead {
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.dateline {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(3rem, 10vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin: 0 0 1.5rem;
+}
+
+.title-line {
+  display: block;
+}
+
+.title-line--accent {
+  color: var(--accent);
+  font-style: italic;
+  padding-left: 2rem;
+}
+
+.lede {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 32em;
+  margin: 0;
+}
+
+/* Setup section */
+.setup {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.field[hidden] {
+  display: none;
+}
+
+.field-label {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.field-num {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.field-name {
+  flex: 1;
+}
+
+.field-optional {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+  margin-left: 0.4rem;
+}
+
+.field-help {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin: 0;
+  font-style: italic;
+}
+
+input[type="text"],
+select {
+  font-family: var(--mono);
+  font-size: 1rem;
+  background: var(--paper);
+  border: 2px solid var(--rule);
+  padding: 0.85rem 1rem;
+  color: var(--ink);
+  border-radius: 0;
+  width: 100%;
+  outline: none;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  background: var(--accent-soft);
+  box-shadow: 4px 4px 0 var(--rule);
+}
+
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+                    linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 12px) 50%;
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+/* Combo (multi-select where the input IS the trigger, or tag-input) */
+.combo {
+  position: relative;
+}
+
+.combo-field {
+  min-height: 3rem;
+  background: var(--paper);
+  border: 2px solid var(--rule);
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: text;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.combo[data-focused="true"] .combo-field {
+  background: var(--accent-soft);
+  box-shadow: 4px 4px 0 var(--rule);
+}
+
+.combo-pills {
+  display: contents; /* pills participate in the flex layout of combo-field */
+}
+
+.combo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--accent);
+  color: var(--paper);
+  border: 1.5px solid var(--rule);
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  font-family: var(--mono);
+}
+
+.combo-pill-x {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.combo-pill-x:hover { opacity: 1; }
+
+.combo-input {
+  flex: 1;
+  min-width: 8ch;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 0.25rem 0 !important;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  color: var(--ink);
+  box-shadow: none !important;
+}
+
+.combo-input:focus {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.combo-popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--paper);
+  border: 2px solid var(--rule);
+  box-shadow: 6px 6px 0 var(--rule);
+  z-index: 10;
+  max-height: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.combo-popover[hidden] {
+  display: none;
+}
+
+.combo-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.85rem;
+  border-bottom: 1px dashed var(--ink-soft);
+}
+
+.combo-action {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: transparent;
+  border: 1px solid var(--ink-soft);
+  padding: 0.25rem 0.55rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.combo-action:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.combo-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.combo-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  user-select: none;
+  font-family: var(--mono);
+}
+
+.combo-option:hover,
+.combo-option[data-active="true"] {
+  background: var(--accent-soft);
+}
+
+.combo-option[data-selected="true"] {
+  background: var(--accent-soft);
+}
+
+.combo-checkbox {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--rule);
+  background: var(--paper);
+  flex-shrink: 0;
+  display: grid;
+  place-content: center;
+}
+
+.combo-option[data-selected="true"] .combo-checkbox {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.combo-option[data-selected="true"] .combo-checkbox::after {
+  content: "✓";
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.combo-group-label {
+  padding: 0.5rem 0.85rem 0.3rem;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+  background: var(--bg);
+  border-top: 1px dashed var(--ink-soft);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.combo-group-label:first-child {
+  border-top: none;
+}
+
+.combo-add-custom {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 0.85rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: var(--mono);
+  background: var(--accent-soft);
+  border-bottom: 1px dashed var(--ink-soft);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.combo-add-custom:hover {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+.combo-empty {
+  padding: 1rem 0.85rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  text-align: center;
+}
+
+/* Generate button */
+.generate {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  padding: 1.25rem 2rem;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+  align-self: flex-start;
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 6px 6px 0 var(--accent);
+}
+
+.generate:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--accent);
+}
+
+.generate:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--accent);
+}
+
+/* Output */
+.output {
+  border: 2px solid var(--rule);
+  padding: 2rem;
+  background: var(--paper);
+  margin-bottom: 2rem;
+  box-shadow: 8px 8px 0 var(--rule);
+}
+
+.output-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--ink-soft);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.output-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+}
+
+.reroll {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1.5px solid var(--rule);
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+  color: var(--ink);
+  transition: background 0.1s;
+}
+
+.reroll:hover { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+
+.idea {
+  font-family: var(--display);
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  line-height: 1.45;
+  font-weight: 400;
+  margin: 0 0 1.5rem;
+}
+
+.idea .slot {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chip {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  background: var(--bg);
+  border: 1.5px solid var(--rule);
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.1s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.chip:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.chip:hover::after {
+  content: "✕ exclude";
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.chip-cat {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  font-size: 0.65rem;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Excluded */
+.excluded {
+  border: 1.5px dashed var(--ink-soft);
+  padding: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.excluded-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.clear-excluded {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  background: transparent;
+  border: 1px solid var(--ink-soft);
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+
+.clear-excluded:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.chips--excluded .chip {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.chips--excluded .chip:hover {
+  background: var(--accent);
+  color: var(--paper);
+  opacity: 1;
+  text-decoration: none;
+}
+
+.chips--excluded .chip:hover::after {
+  content: "↺ restore";
+}
+
+/* Footer */
+.footer {
+  border-top: 2px solid var(--rule);
+  padding-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .page { padding: 2rem 1.25rem 4rem; }
+  .title-line--accent { padding-left: 1rem; }
+  .output { padding: 1.5rem; box-shadow: 5px 5px 0 var(--rule); }
+  .generate { width: 100%; text-align: center; }
+}

@@ -1,0 +1,20 @@
+[
+  { "text": "hammer", "crafts": ["sculpture", "woodworking", "electronics"] },
+  { "text": "drill", "crafts": ["sculpture", "woodworking", "electronics", "jewelry"] },
+  { "text": "screwdriver set", "crafts": ["woodworking", "electronics", "sculpture"] },
+  { "text": "handsaw", "crafts": ["woodworking", "sculpture"] },
+  { "text": "scissors", "crafts": ["paper", "textile", "sketch"] },
+  { "text": "craft knife / box cutter", "crafts": ["paper", "sculpture", "woodworking"] },
+  { "text": "sewing needle and thread", "crafts": ["textile", "jewelry"] },
+  { "text": "sewing machine", "crafts": ["textile"] },
+  { "text": "soldering iron", "crafts": ["electronics", "jewelry", "sculpture"] },
+  { "text": "hot glue gun", "crafts": ["sculpture", "paper", "textile", "electronics"] },
+  { "text": "wood glue", "crafts": ["woodworking", "sculpture"] },
+  { "text": "ruler and pencil", "crafts": ["sketch", "writing", "woodworking", "paper"] },
+  { "text": "an oven", "crafts": ["cooking", "ceramics"] },
+  { "text": "a frying pan", "crafts": ["cooking"] },
+  { "text": "a sharp kitchen knife", "crafts": ["cooking"] },
+  { "text": "phone with camera", "crafts": ["photography", "software"] },
+  { "text": "computer with internet", "crafts": ["software", "music", "writing", "photography"] },
+  { "text": "household items (string, tape, paperclips)", "crafts": ["*"] }
+]
