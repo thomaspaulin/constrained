@@ -357,7 +357,7 @@ function buildToolsClause(tools) {
 function replaceOrStrip(text, token, replacement) {
   if (replacement !== null) return text.replace(token, replacement);
   return text.replace(
-    new RegExp(`\\s*[A-Z][a-z]+:\\s*${escapeRegex(token)}\\.`, "g"),
+    new RegExp(`(^|\\n)[A-Za-z]+:\\s*${escapeRegex(token)}(?=\\n|\\.|$)`, "g"),
     ""
   );
 }
