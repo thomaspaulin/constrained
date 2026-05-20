@@ -58,5 +58,17 @@
   "dance": [
     "Choreograph a {format} {theme_clause} using {material}. Style: {style}. Props: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}.",
     "Perform a {format} {theme_clause} with {material}. Style: {style}. Props: {tools_clause}. Rule: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "songwriting": [
+    "Write a {format} {theme_clause} with {material}. Style: {style}. Rule: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Compose a {format} {theme_clause} using {material}. Style: {style}. Rule: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "poetry": [
+    "Write a {format} {theme_clause} with {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Craft a {format} {theme_clause}. Tool: {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
+  ],
+  "short_story": [
+    "Write a {format} {theme_clause} with {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}.",
+    "Tell a {format} {theme_clause}. Tool: {material}. Style: {style}. Constraint: {technique}. Scope: {scope}. Twist: {quirk}."
   ]
 }

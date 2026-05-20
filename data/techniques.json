@@ -1,36 +1,274 @@
 [
-  { "text": "using only one color", "crafts": ["painting", "sketch", "textile", "ceramics", "paper"] },
-  { "text": "monochrome", "crafts": ["painting", "sketch", "photography", "textile"] },
-  { "text": "without lifting the pen", "crafts": ["sketch"] },
-  { "text": "without any straight lines", "crafts": ["painting", "sketch", "woodworking", "sculpture"] },
-  { "text": "using only straight lines and right angles", "crafts": ["painting", "sketch", "sculpture", "woodworking", "textile"] },
-  { "text": "with your non-dominant hand", "crafts": ["painting", "sketch", "sculpture", "writing"] },
-  { "text": "no measuring tools allowed", "crafts": ["woodworking", "sculpture", "textile", "ceramics", "cooking"] },
-  { "text": "no erasing or undoing — every mark stays", "crafts": ["painting", "sketch", "writing", "ceramics"] },
-  { "text": "only found objects", "crafts": ["sculpture", "jewelry", "electronics"] },
-  { "text": "everything must be reversible / disassembled at the end", "crafts": ["sculpture", "woodworking", "electronics", "textile"] },
-  { "text": "no glue, no fasteners — only friction and gravity", "crafts": ["sculpture", "woodworking"] },
-  { "text": "no power tools", "crafts": ["woodworking", "sculpture", "electronics"] },
-  { "text": "no GUI — terminal only", "crafts": ["software"] },
-  { "text": "no mouse — keyboard only interface", "crafts": ["software"] },
-  { "text": "must work offline", "crafts": ["software"] },
-  { "text": "no images, text only", "crafts": ["software", "writing"] },
-  { "text": "no flash, no tripod", "crafts": ["photography"] },
-  { "text": "shoot only at golden hour", "crafts": ["photography"] },
-  { "text": "shoot only after dark", "crafts": ["photography"] },
-  { "text": "no faces visible", "crafts": ["photography", "sketch", "painting"] },
-  { "text": "no editing, straight out of camera", "crafts": ["photography"] },
-  { "text": "no dialogue, no captions", "crafts": ["writing", "sketch"] },
-  { "text": "second person, present tense", "crafts": ["writing"] },
-  { "text": "no adjectives", "crafts": ["writing"] },
-  { "text": "no recipe consulted", "crafts": ["cooking"] },
-  { "text": "one continuous cooking process, no breaks", "crafts": ["cooking"] },
-  { "text": "no sharp tools — only safe utensils", "crafts": ["cooking", "sculpture"] },
-  { "text": "single take, no edits", "crafts": ["music", "dance", "photography"] },
-  { "text": "no melody, rhythm only", "crafts": ["music"] },
-  { "text": "performed in complete silence", "crafts": ["dance"] },
-  { "text": "performed with eyes closed", "crafts": ["dance", "music"] },
-  { "text": "only one continuous piece of material, no cutting", "crafts": ["textile", "paper", "jewelry"] },
-  { "text": "no patterns, freehand only", "crafts": ["textile", "sketch", "painting"] },
-  { "text": "must be wearable without modification", "crafts": ["textile", "jewelry", "sculpture", "electronics"] }
+  {
+    "text": "using only one color",
+    "crafts": [
+      "painting",
+      "sketch",
+      "textile",
+      "ceramics",
+      "paper"
+    ]
+  },
+  {
+    "text": "monochrome",
+    "crafts": [
+      "painting",
+      "sketch",
+      "photography",
+      "textile"
+    ]
+  },
+  {
+    "text": "without lifting the pen",
+    "crafts": [
+      "sketch"
+    ]
+  },
+  {
+    "text": "without any straight lines",
+    "crafts": [
+      "painting",
+      "sketch",
+      "woodworking",
+      "sculpture"
+    ]
+  },
+  {
+    "text": "using only straight lines and right angles",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "woodworking",
+      "textile"
+    ]
+  },
+  {
+    "text": "with your non-dominant hand",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "no measuring tools allowed",
+    "crafts": [
+      "woodworking",
+      "sculpture",
+      "textile",
+      "ceramics",
+      "cooking"
+    ]
+  },
+  {
+    "text": "no erasing or undoing \u2014 every mark stays",
+    "crafts": [
+      "painting",
+      "sketch",
+      "writing",
+      "ceramics",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "only found objects",
+    "crafts": [
+      "sculpture",
+      "jewelry",
+      "electronics"
+    ]
+  },
+  {
+    "text": "everything must be reversible / disassembled at the end",
+    "crafts": [
+      "sculpture",
+      "woodworking",
+      "electronics",
+      "textile"
+    ]
+  },
+  {
+    "text": "no glue, no fasteners \u2014 only friction and gravity",
+    "crafts": [
+      "sculpture",
+      "woodworking"
+    ]
+  },
+  {
+    "text": "no power tools",
+    "crafts": [
+      "woodworking",
+      "sculpture",
+      "electronics"
+    ]
+  },
+  {
+    "text": "no GUI \u2014 terminal only",
+    "crafts": [
+      "software"
+    ]
+  },
+  {
+    "text": "no mouse \u2014 keyboard only interface",
+    "crafts": [
+      "software"
+    ]
+  },
+  {
+    "text": "must work offline",
+    "crafts": [
+      "software"
+    ]
+  },
+  {
+    "text": "no images, text only",
+    "crafts": [
+      "software",
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "no flash, no tripod",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "shoot only at golden hour",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "shoot only after dark",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "no faces visible",
+    "crafts": [
+      "photography",
+      "sketch",
+      "painting"
+    ]
+  },
+  {
+    "text": "no editing, straight out of camera",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "no dialogue, no captions",
+    "crafts": [
+      "writing",
+      "sketch",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "second person, present tense",
+    "crafts": [
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "no adjectives",
+    "crafts": [
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "no recipe consulted",
+    "crafts": [
+      "cooking"
+    ]
+  },
+  {
+    "text": "one continuous cooking process, no breaks",
+    "crafts": [
+      "cooking"
+    ]
+  },
+  {
+    "text": "no sharp tools \u2014 only safe utensils",
+    "crafts": [
+      "cooking",
+      "sculpture"
+    ]
+  },
+  {
+    "text": "single take, no edits",
+    "crafts": [
+      "music",
+      "dance",
+      "photography",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "no melody, rhythm only",
+    "crafts": [
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "performed in complete silence",
+    "crafts": [
+      "dance"
+    ]
+  },
+  {
+    "text": "performed with eyes closed",
+    "crafts": [
+      "dance",
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "only one continuous piece of material, no cutting",
+    "crafts": [
+      "textile",
+      "paper",
+      "jewelry"
+    ]
+  },
+  {
+    "text": "no patterns, freehand only",
+    "crafts": [
+      "textile",
+      "sketch",
+      "painting"
+    ]
+  },
+  {
+    "text": "must be wearable without modification",
+    "crafts": [
+      "textile",
+      "jewelry",
+      "sculpture",
+      "electronics"
+    ]
+  }
 ]

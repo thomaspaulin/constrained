@@ -1,6 +1,6 @@
 // === Data ===
 const DATA = {};
-const FILES = ["crafts", "hobbies", "formats", "materials", "scope", "techniques", "quirks", "styles", "common_tools", "templates"];
+const FILES = ["crafts", "hobbies", "formats", "materials", "scope", "techniques", "quirks", "styles", "common_tools", "templates", "conflicts"];
 
 // === State ===
 const EXCLUDED_KEY = "wtf-make-excluded-v1";
@@ -305,15 +305,30 @@ function generate() {
   // Style: independent 30% inclusion roll (only if pool has items)
   const includeStyle = stylePool.length > 0 && Math.random() < 0.3;
 
-  const parts = {
+  // Build parts, re-rolling to dodge over-constrained / contradictory combos.
+  // After a few failed tries, drop one optional slot so we always emit something.
+  const buildParts = (dropExtra) => ({
     format: pick(formatPool),
     material: pick(materialPool),
-    scope: dropCat === "scope" || !scopePool.length ? null : pick(scopePool),
-    technique: dropCat === "technique" || !techniquePool.length ? null : pick(techniquePool),
-    quirk: dropCat === "quirk" || !quirkPool.length ? null : pick(quirkPool),
-    style: includeStyle ? pick(stylePool) : null,
+    scope: dropCat === "scope" || dropExtra === "scope" || !scopePool.length ? null : pick(scopePool),
+    technique: dropCat === "technique" || dropExtra === "technique" || !techniquePool.length ? null : pick(techniquePool),
+    quirk: dropCat === "quirk" || dropExtra === "quirk" || !quirkPool.length ? null : pick(quirkPool),
+    style: includeStyle && dropExtra !== "style" ? pick(stylePool) : null,
     tools: toolsForIdea,
-  };
+  });
+
+  let parts = buildParts(null);
+  const MAX_TRIES = 40;
+  for (let i = 0; i < MAX_TRIES && hasConflict(parts); i++) {
+    parts = buildParts(null);
+  }
+  // Still conflicting? Drop optional slots until the combo is clean.
+  if (hasConflict(parts)) {
+    for (const slot of ["quirk", "style", "technique", "scope"]) {
+      parts = buildParts(slot);
+      if (!hasConflict(parts)) break;
+    }
+  }
 
   const themeClause = buildThemeClause([...selectedHobbies]);
   const template = pick(DATA.templates[chosenCraft.id]);
@@ -372,6 +387,17 @@ function fillTemplate(template, parts, themeClause) {
   out = out.replace(/\b(a|A)\s+([aeiouAEIOU])/g, "$1n $2");
 
   return out;
+}
+
+// === Conflicts ===
+// A combo is invalid if any conflict rule's items are all present in the chosen parts.
+function hasConflict(parts) {
+  const chosen = new Set(
+    [parts.format, parts.material, parts.scope, parts.technique, parts.quirk, parts.style]
+      .filter(Boolean)
+      .map((p) => p.text)
+  );
+  return (DATA.conflicts || []).some((rule) => rule.items.every((t) => chosen.has(t)));
 }
 
 // === Pool filtering ===

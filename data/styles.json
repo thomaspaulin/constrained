@@ -1,60 +1,675 @@
 [
-  { "text": "bauhaus", "crafts": ["painting", "sketch", "sculpture", "textile", "woodworking", "ceramics", "jewelry", "paper", "electronics", "software"] },
-  { "text": "art nouveau", "crafts": ["painting", "sketch", "sculpture", "textile", "jewelry", "ceramics", "paper", "woodworking"] },
-  { "text": "art deco", "crafts": ["painting", "sketch", "sculpture", "textile", "jewelry", "ceramics", "paper", "woodworking", "photography"] },
-  { "text": "brutalist", "crafts": ["painting", "sketch", "sculpture", "ceramics", "woodworking", "software", "photography", "writing"] },
-  { "text": "minimalist", "crafts": ["painting", "sketch", "sculpture", "ceramics", "textile", "jewelry", "paper", "woodworking", "photography", "music", "software", "writing", "dance"] },
-  { "text": "maximalist", "crafts": ["painting", "sketch", "sculpture", "ceramics", "textile", "jewelry", "paper", "music", "writing", "cooking"] },
-  { "text": "dada", "crafts": ["painting", "sketch", "sculpture", "paper", "photography", "writing", "music", "dance"] },
-  { "text": "surrealist", "crafts": ["painting", "sketch", "sculpture", "photography", "writing", "music", "dance", "cooking"] },
-  { "text": "cubist", "crafts": ["painting", "sketch", "sculpture", "ceramics", "paper", "textile"] },
-  { "text": "impressionist", "crafts": ["painting", "sketch", "photography", "music"] },
-  { "text": "expressionist", "crafts": ["painting", "sketch", "sculpture", "ceramics", "music", "dance", "writing"] },
-  { "text": "abstract expressionist", "crafts": ["painting", "sketch", "sculpture", "ceramics", "textile"] },
-  { "text": "ukiyo-e inspired", "crafts": ["painting", "sketch", "paper", "textile"] },
-  { "text": "wabi-sabi", "crafts": ["ceramics", "sculpture", "woodworking", "textile", "photography", "painting", "jewelry", "cooking"] },
-  { "text": "art brut / outsider", "crafts": ["painting", "sketch", "sculpture", "ceramics", "writing"] },
-  { "text": "pop art", "crafts": ["painting", "sketch", "sculpture", "paper", "textile", "photography"] },
-  { "text": "op art", "crafts": ["painting", "sketch", "paper", "textile", "software"] },
-  { "text": "futurist", "crafts": ["painting", "sketch", "sculpture", "writing", "music", "software"] },
-  { "text": "suprematist", "crafts": ["painting", "sketch", "sculpture", "textile", "paper"] },
-  { "text": "de stijl", "crafts": ["painting", "sketch", "sculpture", "textile", "paper", "woodworking", "software"] },
-  { "text": "constructivist", "crafts": ["painting", "sketch", "sculpture", "paper", "photography", "writing", "software"] },
-  { "text": "swiss / international typographic", "crafts": ["sketch", "paper", "software", "writing"] },
-  { "text": "memphis", "crafts": ["painting", "sketch", "sculpture", "textile", "ceramics", "jewelry", "software"] },
-  { "text": "ulm school", "crafts": ["sketch", "sculpture", "woodworking", "electronics", "software"] },
-  { "text": "postmodern", "crafts": ["painting", "sketch", "sculpture", "ceramics", "writing", "music", "software", "textile", "jewelry"] },
-  { "text": "deconstructivist", "crafts": ["sculpture", "sketch", "textile", "writing", "music"] },
-  { "text": "vaporwave", "crafts": ["painting", "sketch", "photography", "software", "music"] },
-  { "text": "solarpunk", "crafts": ["painting", "sketch", "sculpture", "textile", "writing", "software", "electronics"] },
-  { "text": "cyberpunk", "crafts": ["painting", "sketch", "sculpture", "photography", "writing", "software", "electronics", "music"] },
-  { "text": "cottagecore", "crafts": ["painting", "sketch", "ceramics", "textile", "photography", "writing", "cooking"] },
-  { "text": "y2k aesthetic", "crafts": ["painting", "sketch", "photography", "textile", "jewelry", "software", "music"] },
-  { "text": "afrofuturist", "crafts": ["painting", "sketch", "sculpture", "textile", "photography", "writing", "music", "software"] },
-  { "text": "gothic revival", "crafts": ["painting", "sketch", "sculpture", "textile", "woodworking", "jewelry", "writing", "music"] },
-  { "text": "rococo", "crafts": ["painting", "sketch", "sculpture", "textile", "jewelry", "ceramics", "cooking"] },
-  { "text": "baroque", "crafts": ["painting", "sketch", "sculpture", "textile", "music", "writing", "cooking"] },
-  { "text": "shaker", "crafts": ["woodworking", "textile", "ceramics", "sculpture"] },
-  { "text": "scandinavian / mid-century modern", "crafts": ["sculpture", "woodworking", "textile", "ceramics", "jewelry"] },
-  { "text": "japonisme", "crafts": ["painting", "sketch", "ceramics", "textile", "paper", "sculpture", "jewelry"] },
-  { "text": "fluxus", "crafts": ["sculpture", "music", "writing", "dance", "paper", "photography"] },
-  { "text": "arte povera", "crafts": ["sculpture", "painting", "photography"] },
-  { "text": "land art / earth art", "crafts": ["sculpture", "photography"] },
-  { "text": "kinetic art", "crafts": ["sculpture", "electronics"] },
-  { "text": "pictorialist photography", "crafts": ["photography"] },
-  { "text": "straight photography", "crafts": ["photography"] },
-  { "text": "new topographics", "crafts": ["photography"] },
-  { "text": "becher school deadpan", "crafts": ["photography"] },
-  { "text": "musique concrète", "crafts": ["music"] },
-  { "text": "serialism", "crafts": ["music"] },
-  { "text": "no wave", "crafts": ["music"] },
-  { "text": "lo-fi", "crafts": ["music", "photography", "software"] },
-  { "text": "hyperpop", "crafts": ["music"] },
-  { "text": "magical realism", "crafts": ["writing", "painting", "sketch"] },
-  { "text": "oulipo / constraint-based", "crafts": ["writing"] },
-  { "text": "dirty realism", "crafts": ["writing", "photography"] },
-  { "text": "beat", "crafts": ["writing", "music"] },
-  { "text": "demoscene", "crafts": ["software", "music"] },
-  { "text": "ascii / textmode", "crafts": ["software", "writing", "sketch"] },
-  { "text": "glitch", "crafts": ["software", "photography", "sketch", "music", "textile"] }
+  {
+    "text": "bauhaus",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "woodworking",
+      "ceramics",
+      "jewelry",
+      "paper",
+      "electronics",
+      "software"
+    ]
+  },
+  {
+    "text": "art nouveau",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "jewelry",
+      "ceramics",
+      "paper",
+      "woodworking"
+    ]
+  },
+  {
+    "text": "art deco",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "jewelry",
+      "ceramics",
+      "paper",
+      "woodworking",
+      "photography"
+    ]
+  },
+  {
+    "text": "brutalist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "woodworking",
+      "software",
+      "photography",
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "minimalist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "textile",
+      "jewelry",
+      "paper",
+      "woodworking",
+      "photography",
+      "music",
+      "software",
+      "writing",
+      "dance",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "maximalist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "textile",
+      "jewelry",
+      "paper",
+      "music",
+      "writing",
+      "cooking",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "dada",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "paper",
+      "photography",
+      "writing",
+      "music",
+      "dance",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "surrealist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "photography",
+      "writing",
+      "music",
+      "dance",
+      "cooking",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "cubist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "paper",
+      "textile"
+    ]
+  },
+  {
+    "text": "impressionist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "photography",
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "expressionist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "music",
+      "dance",
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "abstract expressionist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "textile"
+    ]
+  },
+  {
+    "text": "ukiyo-e inspired",
+    "crafts": [
+      "painting",
+      "sketch",
+      "paper",
+      "textile"
+    ]
+  },
+  {
+    "text": "wabi-sabi",
+    "crafts": [
+      "ceramics",
+      "sculpture",
+      "woodworking",
+      "textile",
+      "photography",
+      "painting",
+      "jewelry",
+      "cooking"
+    ]
+  },
+  {
+    "text": "art brut / outsider",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "pop art",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "paper",
+      "textile",
+      "photography"
+    ]
+  },
+  {
+    "text": "op art",
+    "crafts": [
+      "painting",
+      "sketch",
+      "paper",
+      "textile",
+      "software"
+    ]
+  },
+  {
+    "text": "futurist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "writing",
+      "music",
+      "software",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "suprematist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "paper"
+    ]
+  },
+  {
+    "text": "de stijl",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "paper",
+      "woodworking",
+      "software"
+    ]
+  },
+  {
+    "text": "constructivist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "paper",
+      "photography",
+      "writing",
+      "software",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "swiss / international typographic",
+    "crafts": [
+      "sketch",
+      "paper",
+      "software",
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "memphis",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "ceramics",
+      "jewelry",
+      "software"
+    ]
+  },
+  {
+    "text": "ulm school",
+    "crafts": [
+      "sketch",
+      "sculpture",
+      "woodworking",
+      "electronics",
+      "software"
+    ]
+  },
+  {
+    "text": "postmodern",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "ceramics",
+      "writing",
+      "music",
+      "software",
+      "textile",
+      "jewelry",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "deconstructivist",
+    "crafts": [
+      "sculpture",
+      "sketch",
+      "textile",
+      "writing",
+      "music",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "vaporwave",
+    "crafts": [
+      "painting",
+      "sketch",
+      "photography",
+      "software",
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "solarpunk",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "writing",
+      "software",
+      "electronics",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "cyberpunk",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "photography",
+      "writing",
+      "software",
+      "electronics",
+      "music",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "cottagecore",
+    "crafts": [
+      "painting",
+      "sketch",
+      "ceramics",
+      "textile",
+      "photography",
+      "writing",
+      "cooking",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "y2k aesthetic",
+    "crafts": [
+      "painting",
+      "sketch",
+      "photography",
+      "textile",
+      "jewelry",
+      "software",
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "afrofuturist",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "photography",
+      "writing",
+      "music",
+      "software",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "gothic revival",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "woodworking",
+      "jewelry",
+      "writing",
+      "music",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "rococo",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "jewelry",
+      "ceramics",
+      "cooking"
+    ]
+  },
+  {
+    "text": "baroque",
+    "crafts": [
+      "painting",
+      "sketch",
+      "sculpture",
+      "textile",
+      "music",
+      "writing",
+      "cooking",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "shaker",
+    "crafts": [
+      "woodworking",
+      "textile",
+      "ceramics",
+      "sculpture"
+    ]
+  },
+  {
+    "text": "scandinavian / mid-century modern",
+    "crafts": [
+      "sculpture",
+      "woodworking",
+      "textile",
+      "ceramics",
+      "jewelry"
+    ]
+  },
+  {
+    "text": "japonisme",
+    "crafts": [
+      "painting",
+      "sketch",
+      "ceramics",
+      "textile",
+      "paper",
+      "sculpture",
+      "jewelry"
+    ]
+  },
+  {
+    "text": "fluxus",
+    "crafts": [
+      "sculpture",
+      "music",
+      "writing",
+      "dance",
+      "paper",
+      "photography",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "arte povera",
+    "crafts": [
+      "sculpture",
+      "painting",
+      "photography"
+    ]
+  },
+  {
+    "text": "land art / earth art",
+    "crafts": [
+      "sculpture",
+      "photography"
+    ]
+  },
+  {
+    "text": "kinetic art",
+    "crafts": [
+      "sculpture",
+      "electronics"
+    ]
+  },
+  {
+    "text": "pictorialist photography",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "straight photography",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "new topographics",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "becher school deadpan",
+    "crafts": [
+      "photography"
+    ]
+  },
+  {
+    "text": "musique concr\u00e8te",
+    "crafts": [
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "serialism",
+    "crafts": [
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "no wave",
+    "crafts": [
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "lo-fi",
+    "crafts": [
+      "music",
+      "photography",
+      "software",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "hyperpop",
+    "crafts": [
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "magical realism",
+    "crafts": [
+      "writing",
+      "painting",
+      "sketch",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "oulipo / constraint-based",
+    "crafts": [
+      "writing",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "dirty realism",
+    "crafts": [
+      "writing",
+      "photography",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "beat",
+    "crafts": [
+      "writing",
+      "music",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "demoscene",
+    "crafts": [
+      "software",
+      "music",
+      "songwriting"
+    ]
+  },
+  {
+    "text": "ascii / textmode",
+    "crafts": [
+      "software",
+      "writing",
+      "sketch",
+      "songwriting",
+      "poetry",
+      "short_story"
+    ]
+  },
+  {
+    "text": "glitch",
+    "crafts": [
+      "software",
+      "photography",
+      "sketch",
+      "music",
+      "textile",
+      "songwriting"
+    ]
+  }
 ]

@@ -1,0 +1,54 @@
+[
+  {
+    "items": ["salvaged metal", "only one continuous piece of material, no cutting"],
+    "reason": "rigid metal can't be shaped into a wearable without cutting or joining"
+  },
+  {
+    "items": ["wearable circuit", "only one continuous piece of material, no cutting"],
+    "reason": "a circuit needs separate components and connections — can't be one uncut piece"
+  },
+  {
+    "items": ["wearable circuit", "no images, text only"],
+    "reason": "a circuit is physical, not text"
+  },
+  {
+    "items": ["must be wearable without modification", "salvaged metal"],
+    "reason": "raw salvaged metal isn't wearable as-is without working it"
+  },
+  {
+    "items": ["six-word story", "no adjectives"],
+    "reason": "six words is already too tight to also ban adjectives meaningfully"
+  },
+  {
+    "items": ["comic strip", "no images, text only"],
+    "reason": "a comic strip is built from images"
+  },
+  {
+    "items": ["diagram or schematic", "no images, text only"],
+    "reason": "a diagram is a visual, not text"
+  },
+  {
+    "items": ["photo essay", "no images, text only"],
+    "reason": "a photo essay is mostly images"
+  },
+  {
+    "items": ["single melodic phrase", "no melody, rhythm only"],
+    "reason": "can't write a melodic phrase with no melody"
+  },
+  {
+    "items": ["song with verse and chorus", "no melody, rhythm only"],
+    "reason": "a verse/chorus song needs melody"
+  },
+  {
+    "items": ["found poem from a newspaper", "magnetic fridge words"],
+    "reason": "the source material contradicts itself — newspaper vs fridge words"
+  },
+  {
+    "items": ["three chords only", "no melody, rhythm only"],
+    "reason": "chords carry harmony/melody — can't use them under a rhythm-only rule"
+  },
+  {
+    "items": ["photo essay", "must be impossible to photograph well"],
+    "reason": "a photo essay is made of photographs"
+  }
+]
