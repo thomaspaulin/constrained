@@ -50,5 +50,97 @@
   {
     "items": ["photo essay", "must be impossible to photograph well"],
     "reason": "a photo essay is made of photographs"
+  },
+  {
+    "items": ["must take a frustrating wait to load, then reward you — dial-up patience", "must surprise the person experiencing it within the first 5 seconds"],
+    "reason": "a deliberate slow wait can't also surprise within the first 5 seconds"
+  },
+  {
+    "items": ["must reveal itself slowly over minutes with no peeking, like a developing Polaroid", "must surprise the person experiencing it within the first 5 seconds"],
+    "reason": "a slow minutes-long reveal can't land a surprise in the first 5 seconds"
+  },
+  {
+    "items": ["must need feeding or maintenance or it 'dies' — Tamagotchi rules", "must be destroyed or eaten within an hour of finishing"],
+    "reason": "ongoing upkeep contradicts destroying it within an hour"
+  },
+  {
+    "items": ["must need feeding or maintenance or it 'dies' — Tamagotchi rules", "must be left in a public place when finished"],
+    "reason": "you can't keep feeding something you abandon in public"
+  },
+  {
+    "items": ["must carry a fake 'Best Before 1999' so it looks like a thrift-store find", "must look like it was made 50 years in the future"],
+    "reason": "a retro thrift-store relic can't also look 50 years in the future"
+  },
+  {
+    "items": ["must carry a fake 'Best Before 1999' so it looks like a thrift-store find", "must look like it was made 50 years ago"],
+    "reason": "redundant — both ask for the same aged, dated look"
+  },
+  {
+    "items": ["must be a chain-letter: it commands the next person to remake and pass it on", "must be destroyed or eaten within an hour of finishing"],
+    "reason": "it can't be passed on to the next maker if it's destroyed within an hour"
+  },
+  {
+    "items": ["must be wipeable in a single shake, erasing the whole thing — Etch A Sketch", "must be destroyed or eaten within an hour of finishing"],
+    "reason": "redundant — both demand the piece not survive"
+  },
+  {
+    "items": ["must communicate using only numbers, pager-style — no words", "no images, text only"],
+    "reason": "numbers-only contradicts a text-driven piece"
+  },
+  {
+    "items": ["must communicate using only numbers, pager-style — no words", "exactly 17 syllables"],
+    "reason": "a 17-syllable form needs words, not numbers"
+  },
+  {
+    "items": ["must communicate using only numbers, pager-style — no words", "six-word story"],
+    "reason": "a six-word story needs words, not numbers"
+  },
+  {
+    "items": ["must reduce to the fewest possible moving parts — two paddles and a dot, Pong-minimal", "exactly 100 elements somewhere in it"],
+    "reason": "stripping to two paddles and a dot contradicts packing in 100 elements"
+  },
+  {
+    "items": ["must leave a permanent ghost of itself behind, like screen burn-in", "must be wipeable in a single shake, erasing the whole thing — Etch A Sketch"],
+    "reason": "a permanent ghost contradicts wiping it clean in one shake"
+  },
+  {
+    "items": ["must work at exactly one moment, then never the same way again", "loops cleanly"],
+    "reason": "a clean endless loop contradicts working only once"
+  },
+  {
+    "items": ["must work at exactly one moment, then never the same way again", "must change depending on the time of day it's experienced"],
+    "reason": "working only one moment contradicts changing across the day"
+  },
+  {
+    "items": ["must be impossible to make twice — no plan, no notes, no repeat", "must include written instructions for the next maker"],
+    "reason": "instructions to remake it contradict it being impossible to make twice"
+  },
+  {
+    "items": ["must be impossible to make twice — no plan, no notes, no repeat", "must be a chain-letter: it commands the next person to remake and pass it on"],
+    "reason": "a remake-and-pass-on chain contradicts being impossible to make twice"
+  },
+  {
+    "items": ["must be made faster than feels safe, then never touched again", "spread across exactly 7 days, one session per day"],
+    "reason": "a frantic one-shot contradicts a 7-day, one-session-per-day build"
+  },
+  {
+    "items": ["must swap its medium halfway through with no warning", "must be made from a single material with nothing added"],
+    "reason": "switching mediums contradicts using a single material with nothing added"
+  },
+  {
+    "items": ["must be built entirely from your mistakes — keep only the errors", "must look more skilled than you actually are"],
+    "reason": "keeping only the errors contradicts looking more skilled than you are"
+  },
+  {
+    "items": ["must double its scope every time you think you're finished", "must be the smallest possible version of itself"],
+    "reason": "endlessly doubling scope contradicts being the smallest possible version"
+  },
+  {
+    "items": ["must double its scope every time you think you're finished", "no more than one hour total"],
+    "reason": "scope that keeps doubling can't be capped at one hour"
+  },
+  {
+    "items": ["must be restarted from scratch the instant you're interrupted", "spread across exactly 7 days, one session per day"],
+    "reason": "restarting on any interruption is incompatible with a deliberately broken-up 7-day build"
   }
 ]
