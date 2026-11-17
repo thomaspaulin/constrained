@@ -564,3 +564,7 @@ select {
   .output { padding: 1.5rem; box-shadow: 5px 5px 0 var(--rule); }
   .generate { width: 100%; text-align: center; }
 }
+
+/* ?embed: the blog post supplies its own title and intro around the iframe. */
+.embed .masthead { display: none; }
+.embed .page { padding-top: 1rem; padding-bottom: 1rem; }
