@@ -550,6 +550,7 @@ select {
 
 /* Footer */
 .footer {
+  margin-top: 3rem;
   border-top: 2px solid var(--rule);
   padding-top: 1.5rem;
   font-size: 0.75rem;
@@ -568,3 +569,4 @@ select {
 /* ?embed: the blog post supplies its own title and intro around the iframe. */
 .embed .masthead { display: none; }
 .embed .page { padding-top: 1rem; padding-bottom: 1rem; }
+.embed .footer { margin-top: 1.5rem; padding-top: 1rem; }
