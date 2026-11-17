@@ -40,7 +40,7 @@ Any free static host works. Options:
 
 ## Customize
 
-All content lives in `data/*.json`. To add or remove:
+All content lives in `public/data/*.json`. To add or remove:
 
 - **New craft**: add an entry to `crafts.json` and a template array to `templates.json` with the same `id`.
 - **New format / material / scope / technique / quirk**: add an entry with a `crafts` array. Use `["*"]` for craft-agnostic items.
@@ -64,3 +64,6 @@ data/
   common_tools.json
   templates.json   per-craft sentence templates
 ```
+
+## Deploying to CloudFlare
+wrangler pages deploy public
