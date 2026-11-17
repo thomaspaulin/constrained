@@ -33,6 +33,10 @@ body::before {
   z-index: 1;
 }
 
+a {
+  color: var(--accent);
+}
+
 .page {
   position: relative;
   z-index: 2;
@@ -82,7 +86,6 @@ body::before {
   font-weight: 400;
   font-style: italic;
   color: var(--ink-soft);
-  max-width: 32em;
   margin: 0;
 }
 
